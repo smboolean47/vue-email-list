@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Vuejs Email list</title>
+	</head>
+	<body>
+		
+		<div id="root">
+			<h2>Lista Email</h2>
+			<ul v-show="emails.length == 10">
+				<li v-for="email in emails">{{email}}</li>
+			</ul>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<!-- development version, includes helpful console warnings -->
+		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
